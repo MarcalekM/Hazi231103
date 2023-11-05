@@ -29,6 +29,25 @@ namespace Hazi231105
             }
             Console.WriteLine($"A keresett átlag:  {max - 0.1}");
 
+            Console.WriteLine("10. feladat:");
+            var f10 = szoftverek.Where(sz => sz.Nev.Contains("Adobe"));
+            double atlag = 0;
+            foreach (var f in f10)
+            {
+                atlag += f.Brutto(f.Ar, f.AdoKulcs);
+            }
+            Console.WriteLine($"Az Adobe szoftverek átlag bruttó érétke {atlag / f10.Count()} USD");
+
+            Console.WriteLine("11. feladat:");
+            var f11 = szoftverek.Where(sz => sz.OPrendszerek.Length >= 2);
+            f11 = f11.OrderBy(sz => sz.Kategoria);
+            foreach (var f in f11)
+            {
+                Console.WriteLine(f.Kategoria);
+            }
+
+            Console.WriteLine("12. feladat:");
+
             Console.ReadLine();
         }
     }
