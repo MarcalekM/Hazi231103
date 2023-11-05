@@ -41,6 +41,7 @@ namespace Hazi231105
             Console.WriteLine("\n11. feladat:");
             var f11 = szoftverek.Where(sz => sz.OPrendszerek.Length >= 2);
             f11 = f11.OrderBy(sz => sz.Kategoria);
+            f11 = f11.DistinctBy(sz => sz.Kategoria);
             foreach (var f in f11)
             {
                 Console.WriteLine(f.Kategoria);
