@@ -51,6 +51,21 @@ namespace Hazi231105
             if (f12.Count() > 0) foreach (var f in f12) Console.WriteLine(f.Sorszam);
             else Console.WriteLine("Nincs ilyen szoftver");
 
+            var f13 = szoftverek.Where(sz => sz.LicenszType.Equals("fizetős"));
+            int counter = 0;
+            using StreamWriter sw = new(
+                path: @"..\..\..\src\szoftverek2.txt",
+                append: false,
+                encoding: System.Text.Encoding.UTF8);
+            foreach (var f in f13)
+            {
+                if (counter < 10)
+                {
+                    sw.WriteLine(f.ToString());
+                }
+                counter++;
+            }
+
             Console.ReadLine();
         }
     }

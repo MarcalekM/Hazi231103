@@ -1,0 +1,10 @@
+﻿Sorszam:  1, Nev:  Adobe Photoshop 23.1, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,5, Ár:  599,99, Adókulcs:  9
+Sorszam:  4, Nev:  Final Cut Pro 10.5, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,7, Ár:  299,99, Adókulcs:  6
+Sorszam:  5, Nev:  AutoCAD 2023, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,3, Ár:  1299,99, Adókulcs:  5
+Sorszam:  6, Nev:  Adobe Illustrator 27, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,4, Ár:  249,99, Adókulcs:  6
+Sorszam:  7, Nev:  Windows 11 Pro 11, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,1, Ár:  199,99, Adókulcs:  8
+Sorszam:  8, Nev:  Logic Pro X 10.7, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,6, Ár:  199,99, Adókulcs:  6
+Sorszam:  11, Nev:  Adobe Premiere Pro 27.1, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,6, Ár:  299,99, Adókulcs:  7
+Sorszam:  13, Nev:  CorelDRAW Graphics Suite 2023, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,4, Ár:  499,99, Adókulcs:  6
+Sorszam:  14, Nev:  Microsoft Windows 10 Home 10, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9, Ár:  139,99, Adókulcs:  7
+Sorszam:  15, Nev:  Adobe Acrobat Pro 2023, Licensz típus:  fizetős, Operációs rendszerek:  System.String[], Értékelés:  9,2, Ár:  199,99, Adókulcs:  6

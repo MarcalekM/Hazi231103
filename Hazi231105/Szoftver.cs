@@ -32,7 +32,7 @@ namespace Hazi231105
 
         public override string ToString()
         {
-            return $"Sorszam:  {Sorszam},\nNev:  {Nev},\nLicensz típus:  {LicenszType},\nOperációs rendszerek:  {OPrendszerek},\nÉrtékelés:  {Ertekeles},\nÁr:  {Ar},\nAdókulcs:  {AdoKulcs}";
+            return $"Sorszam:  {Sorszam}, Nev:  {Nev}, Licensz típus:  {LicenszType}, Operációs rendszerek:  {OPrendszerek}, Értékelés:  {Ertekeles}, Ár:  {Ar}, Adókulcs:  {AdoKulcs}";
         }
 
         public double Brutto(double Ar, int AdoKulcs)
