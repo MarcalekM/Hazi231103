@@ -16,11 +16,11 @@ namespace Hazi231105
             {
                 Console.WriteLine(sz.ToString());
             }
-            Console.WriteLine("7. feladat:");
+            Console.WriteLine("\n7. feladat:");
             var f7 = szoftverek.Where(sz => sz.Kategoria.Equals("antivírus") && sz.Ertekeles >= 8.5);
             Console.WriteLine($"\t{f7.Count()} db 8,5-nél magasabb értélelésű antivírus szoftver van");
 
-            Console.WriteLine("8. feladat:");
+            Console.WriteLine("\n8. feladat:");
             double max = szoftverek.Max(sz => sz.Ertekeles);
             var f8 = szoftverek.Where(sz => sz.Ertekeles.Equals(max - 0.1));
             foreach (var f in f8)
@@ -29,7 +29,7 @@ namespace Hazi231105
             }
             Console.WriteLine($"A keresett átlag:  {max - 0.1}");
 
-            Console.WriteLine("10. feladat:");
+            Console.WriteLine("\n10. feladat:");
             var f10 = szoftverek.Where(sz => sz.Nev.Contains("Adobe"));
             double atlag = 0;
             foreach (var f in f10)
@@ -38,7 +38,7 @@ namespace Hazi231105
             }
             Console.WriteLine($"Az Adobe szoftverek átlag bruttó érétke {atlag / f10.Count()} USD");
 
-            Console.WriteLine("11. feladat:");
+            Console.WriteLine("\n11. feladat:");
             var f11 = szoftverek.Where(sz => sz.OPrendszerek.Length >= 2);
             f11 = f11.OrderBy(sz => sz.Kategoria);
             foreach (var f in f11)
@@ -46,7 +46,10 @@ namespace Hazi231105
                 Console.WriteLine(f.Kategoria);
             }
 
-            Console.WriteLine("12. feladat:");
+            Console.WriteLine("\n12. feladat:");
+            var f12 = szoftverek.Where(sz => sz.Ar >= 500 && sz.Ertekeles < 9);
+            if (f12.Count() > 0) foreach (var f in f12) Console.WriteLine(f.Sorszam);
+            else Console.WriteLine("Nincs ilyen szoftver");
 
             Console.ReadLine();
         }
